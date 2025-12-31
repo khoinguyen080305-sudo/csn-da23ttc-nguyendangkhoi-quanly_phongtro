@@ -1,0 +1,294 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Container chứa form đăng nhập */
+.login-container {
+  width: 100%;
+  max-width: 450px;
+  animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Form đăng nhập */
+.login-form {
+  background: #ffffff;
+  padding: 40px 35px;
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 215, 0, 0.2);
+}
+
+/* Heading form */
+.form-heading {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.form-heading h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #0f3460;
+  margin: 10px 0 5px 0;
+  text-shadow: 0 2px 4px rgba(15, 52, 96, 0.1);
+}
+
+.form-heading .text-muted {
+  font-size: 14px;
+  color: #666;
+}
+
+.logo-img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 8px rgba(255, 215, 0, 0.3));
+}
+
+/* Input groups */
+.input-group {
+  margin-bottom: 20px;
+}
+
+.label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #0f3460;
+  margin-bottom: 8px;
+}
+
+.label i {
+  margin-right: 5px;
+  color: #ffd700;
+}
+
+.form-control {
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 15px;
+  border: 2px solid #e5e7eb;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  background: #f9fafb;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: #ffd700;
+  background: #ffffff;
+  box-shadow: 0 0 0 4px rgba(255, 215, 0, 0.1);
+}
+
+.form-control::placeholder {
+  color: #9ca3af;
+}
+
+/* Buttons */
+.button-group {
+  margin-top: 25px;
+}
+
+.btn {
+  padding: 12px 20px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #0f3460 0%, #16213e 100%);
+  color: #ffd700;
+  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+  border: 2px solid #ffd700;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+  color: #0f3460;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 215, 0, 0.5);
+  border: 2px solid #0f3460;
+}
+
+.btn-outline-secondary {
+  background: transparent;
+  color: #0f3460;
+  border: 2px solid #e5e7eb;
+}
+
+.btn-outline-secondary:hover {
+  background: #f9fafb;
+  border-color: #ffd700;
+  color: #ffd700;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 215, 0, 0.2);
+}
+
+/* Alert */
+.alert {
+  border-radius: 10px;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  animation: slideInDown 0.4s ease-out;
+}
+
+@keyframes slideInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.alert-danger {
+  background-color: #fee2e2;
+  border: 1px solid #fecaca;
+  color: #dc2626;
+}
+
+.alert i {
+  margin-right: 5px;
+}
+
+/* Demo account info box */
+.bg-light {
+  background: linear-gradient(135deg, #f9fafb 0%, #f3f4f6 100%) !important;
+  border: 1px solid #e5e7eb;
+}
+
+code {
+  background: linear-gradient(135deg, #0f3460 0%, #16213e 100%);
+  padding: 3px 8px;
+  border-radius: 6px;
+  color: #ffd700;
+  font-size: 13px;
+  font-weight: 600;
+  box-shadow: 0 2px 4px rgba(15, 52, 96, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+  .login-form {
+    padding: 30px 25px;
+  }
+  
+  .form-heading h3 {
+    font-size: 20px;
+  }
+  
+  .logo-img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .btn {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+}
+
+/* Hiệu ứng focus cho input */
+.input-group input:focus + .label {
+  color: #ffd700;
+}
+
+/* Text muted */
+.text-muted {
+  color: #6b7280 !important;
+  font-size: 13px;
+}
+
+small {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+/* Spacing utilities */
+.mt-3 {
+  margin-top: 1rem !important;
+}
+
+.mb-1, .mb-2, .mb-3, .mb-4 {
+  margin-bottom: 0.25rem !important;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem !important;
+}
+
+.mb-3 {
+  margin-bottom: 1rem !important;
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem !important;
+}
+
+.p-2 {
+  padding: 0.5rem !important;
+}
+
+.d-block {
+  display: block !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.rounded {
+  border-radius: 0.5rem !important;
+}
+
+/* Flex utilities */
+.d-flex {
+  display: flex !important;
+}
+
+.gap-2 {
+  gap: 0.5rem !important;
+}
+
+.flex-fill {
+  flex: 1 1 auto !important;
+}
+
+.me-2 {
+  margin-right: 0.5rem !important;
+}
