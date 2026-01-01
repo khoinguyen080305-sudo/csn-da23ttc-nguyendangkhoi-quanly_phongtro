@@ -1,11 +1,12 @@
 # csn-da23ttc-nguyendangkhoi-quanly_phongtro
-# Website Quản Lý Phòng Trọ
+# Thiết kế Website quản lý phòng trọ
 
 ## Thông tin đồ án
 - Thực tập: Đồ án cơ sở ngành
 - Sinh viên: Nguyễn Đăng Khôi
 - MSSV: 110123117
 - Lớp: DA23TTC
+- Mail: 110123117@st.tvu.edu.vn
 
 ## Mô tả
 Website quản lý phòng trọ hỗ trợ:
@@ -16,7 +17,8 @@ Website quản lý phòng trọ hỗ trợ:
 - src/: mã nguồn chương trình
 - setup/: cài đặt hệ thống
 - progress-report/: báo cáo tiến độ
-- thesis/: báo cáo đồ án
+- thesis/doc: tập tin doc.x báo cáo đồ án
+- thesis/abs: ảnh poster 
 
 ## Hướng dẫn cài đặt
 Xem chi tiết trong thư mục setup/
