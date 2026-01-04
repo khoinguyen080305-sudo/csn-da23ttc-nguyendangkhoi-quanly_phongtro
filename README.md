@@ -17,8 +17,7 @@ Website quản lý phòng trọ hỗ trợ:
 - src/: mã nguồn chương trình
 - setup/: cài đặt hệ thống
 - progress-report/: báo cáo tiến độ
-- thesis/doc: tập tin doc.x báo cáo đồ án
-- thesis/abs: ảnh poster 
+- thesis/pdf: tập tin báo cáo đồ án và poster
 
 ## Hướng dẫn cài đặt
 Xem chi tiết trong thư mục setup/
