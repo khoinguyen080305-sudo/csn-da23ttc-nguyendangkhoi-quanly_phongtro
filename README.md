@@ -18,6 +18,8 @@ Website quản lý phòng trọ hỗ trợ:
 - setup/: cài đặt hệ thống
 - progress-report/: báo cáo tiến độ
 - thesis/pdf: tập tin báo cáo đồ án và poster
+- thesis/abs: slide báo cáo
+- thesis/html: tài liệu web tham khảo
 
 ## Hướng dẫn cài đặt
 Xem chi tiết trong thư mục setup/
